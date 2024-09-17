@@ -12,7 +12,7 @@ public class Authority {
     private String authority;
     @Column(name = "user")
     @ManyToOne
-    @JoinColumn(name = "")
+    @JoinColumn(name = "user_id")
     private User user;
 
     public Long getId() {
