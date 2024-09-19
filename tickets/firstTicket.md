@@ -278,7 +278,7 @@ package com.hcc.dto;
 
 import com.hcc.entities.Assignment;
 import com.hcc.enums.AssignmentEnum;
-import com.hcc.enums.AssignmentStatusEnum;
+import com.hcc.enums.AssignmentStatusEnumTest;
 
 import java.util.ArrayList;
 import java.util.Arrays;

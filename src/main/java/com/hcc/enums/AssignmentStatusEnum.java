@@ -10,9 +10,8 @@ public enum AssignmentStatusEnum {
     NEEDS_UPDATE("Needs Update", 4),
     COMPLETED("Completed", 5),
     RESUBMITTED("Resubmitted", 6);
-
-    private String status;
     private Integer step;
+    private String status;
     AssignmentStatusEnum(String status, Integer step) {
         this.status = status;
         this.step = step;

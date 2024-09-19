@@ -1,10 +1,7 @@
 package com.hcc.entities;
-
+import com.hcc.enums.AssignmentEnum;
 import com.hcc.enums.AssignmentStatusEnum;
 import org.junit.jupiter.api.Test;
-
-import javax.persistence.Column;
-import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -13,7 +10,7 @@ public class AssignmentTest {
     public void setUserFields_withValidData_FieldsAreSetCorrectly() {
         Long id = 44556165L;
         String status = AssignmentStatusEnum.PENDING_SUBMISSION.toString();
-        Integer number = 12;
+        Integer number = AssignmentEnum.ASSIGNMENT_1.getAssignmentNumber();
         String githubUrl = "github.com/1234";
         String branch = "test";
         String videoUrl = "youtube.com";
