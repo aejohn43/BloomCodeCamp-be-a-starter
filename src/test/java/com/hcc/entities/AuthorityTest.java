@@ -13,9 +13,11 @@ public class AuthorityTest {
         Long id = 646848L;
         String authority= AuthorityEnum.ROLE_LEARNER.toString();
         User user = new User();
+
         Authority authorityObject= new Authority(authority);
         authorityObject.setId(id);
         authorityObject.setUser(user);
+
         assertEquals(authorityObject.getAuthority(), authority);
         assertEquals(authorityObject.getId(), id);
         assertEquals(authorityObject.getUser(), user);

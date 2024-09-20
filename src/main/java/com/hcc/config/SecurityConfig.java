@@ -18,7 +18,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
     @Autowired
     CustomPasswordEncoder customPasswordEncoder;
     @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    protected void configure(AuthenticationManagerBuilder auth)     throws Exception {
 
         auth.userDetailsService(userDetailServiceImpl).passwordEncoder(customPasswordEncoder.getPasswordEncoder());
     }
