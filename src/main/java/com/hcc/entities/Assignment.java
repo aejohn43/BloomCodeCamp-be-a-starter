@@ -18,7 +18,7 @@ public class Assignment {
     private String branch;
     @Column(name = "reviewVideoUrl")
     private String reviewVideoUrl;
-    @Column(name = "user")
+    @JoinColumn(name = "user_id")
     private User user;
 
     public Long getId() {
