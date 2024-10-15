@@ -23,7 +23,7 @@ public class AssignmentTest {
         assignment.setNumber(number);
         assignment.setStatus(status);
         assignment.setGithubUrl(githubUrl);
-        assignment.setReviewVideoUrl(videoUrl);
+        assignment.setCodeReviewVideoUrl(videoUrl);
 
         assertEquals(assignment.getUser(), user);
         assertEquals(assignment.getBranch(), branch);
@@ -31,7 +31,7 @@ public class AssignmentTest {
         assertEquals(assignment.getNumber(), number);
         assertEquals(assignment.getStatus(), status);
         assertEquals(assignment.getGithubUrl(), githubUrl);
-        assertEquals(assignment.getReviewVideoUrl(), videoUrl);
+        assertEquals(assignment.getCodeReviewVideoUrl(), videoUrl);
 
     }
 }
